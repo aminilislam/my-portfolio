@@ -1,0 +1,873 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.background{
+  width: 100%;
+  height: 100vh;
+  background-image:url(img/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 100px;
+}
+
+/*navbar styling*/
+
+
+.max-width .logo{
+  color: #fff;
+  margin-left: 45px;
+  font-size: 20px;
+  font-family: 'Spline Sans', sans-serif;
+  font-weight: 300;
+  cursor: pointer;
+}
+.max-width .logo span{
+  color: crimson;
+}
+.sticky .logo span{
+  color: #000;
+}
+
+
+.navbar .max-width{
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width:100%;
+  background-color:transparent;
+  text-align: center;
+  align-items: center;
+
+}
+.navbar .sticky{
+  display: sticky;
+  background-color:crimson;
+  z-index: 88;
+
+}
+
+.max-width .links li{
+  list-style: none;
+  display: inline;
+  padding: 10px;
+
+  
+}
+
+.max-width .links li a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Spline Sans', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: color 0.3s ease
+}
+.sticky .links li a{
+  color: #000;
+}
+.max-width .links li a:hover{
+  color: crimson;
+}
+.sticky .links li a:hover{
+  color: #fff;
+}
+
+
+
+/******home section styling********/
+
+.center{
+  display: flex;
+  height:90vh;
+  width: 100%;
+  align-items: center;
+  text-align: left;
+  
+}
+.home-text {
+  line-height: 90px;
+  margin-left: 45px;
+  font-family:'Spline Sans', sans-serif; 
+  
+}
+.home-text .text-1{
+  color: white;
+  font-size: 40px;
+}
+.home-text .text-2{
+  color: white;
+  font-size: 60px;
+ 
+}
+.home-text .text-3{
+  color: white;
+  font-size: 45px;
+
+}
+.home-text span{
+  color:crimson;
+  display: inline;
+}
+.home-text .btn{
+ padding: 10px 70px 10px 70px;
+ color:#000;
+ font-size:22px;
+ font-weight: 500;
+ font-family:'Spline Sans', sans-serif;
+ background-color:crimson;
+ outline: none;
+ border-radius:5px;
+ border:none;
+ text-transform:uppercase;
+ 
+ 
+}
+.home-text .btn:hover{
+  color:#fff;
+  background-color:transparent;
+  border:1px solid #fff;
+  font-weight: 400;
+  text-transform:uppercase;
+
+}
+.menu-btn{
+  color: #fff;
+  font-size: 20px;
+  display:none;
+  padding:10px;
+  cursor: pointer;
+  
+}
+
+
+
+/************* about section styling******************/
+
+.about-main-container{
+  padding-top:100px;
+  text-align:center;
+  margin-bottom:30px;
+ 
+
+}
+.sec-title{
+  position: relative;
+  font-family:'Spline Sans', sans-serif;
+  font-weight: 500;
+  font-size: 34px ;
+  margin-bottom:30px;
+  padding-bottom:20px;
+  left: 50%;
+  transform: translateX(-50%)
+
+}
+
+.sec-title::before{
+
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 3px;
+  background-color: #000;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%)
+  
+ 
+}
+.sec-title::after{
+
+  content: 'Who I am';
+  position: absolute;
+  bottom:-14px;
+  left:50%;
+  font-size: 20px;
+  color: crimson;
+  background-color: #fff;
+  transform:translateX(-50%);
+  padding:5px;
+
+  
+  
+  
+  
+ 
+}
+.my-skills .sec-title::after{
+  content: "what i know";
+}
+.contacts .sec-title::after{
+  content: "Get In Touch";
+
+}
+
+   
+.about-container img{
+  width:300px;
+  height:300px;
+  display: block;
+  border-radius:5px;
+  object-fit: cover;
+}
+.about-container{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+
+
+}
+.about-main-container .sec-title{
+  font-weight: 400;
+}
+.about-container .about-text{
+  text-align:justify;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  width: 800px;
+  font-weight: 500;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-size: 25px;
+ 
+}
+.about-container span{
+  color:crimson;
+}
+.about-container .name{
+  font-size: 24px;
+  font-family: 'Spline Sans', sans-serif;
+  font-weight: 500;
+  padding-bottom:10px;
+}
+.about-text .btn,
+.skills-contaier .skill-left .btn{
+  color:#fff;
+  font-family: 'Spline Sans', sans-serif;
+  padding: 10px 30px;
+  background-color:crimson;
+  border:2px solid crimson;
+  font-weight: 400;
+  border-radius:4px;
+  text-transform:uppercase;
+  margin: 20px 0px;
+  display: inline-block;
+  text-decoration: none;
+  font-size:18px;
+  transition:all 0.3s ease;
+
+}
+
+.about-text .btn:hover{
+  color:#000;
+  background-color:#fff;
+  border:2px solid crimson;
+  font-weight: 400;
+  text-transform:uppercase;
+
+}
+/****************My-Service section styling********************/
+
+.servies-container{
+  display:flex;
+  justify-content: space-between;
+  flex: 1;
+  align-items: center;
+  width:90vw;
+  margin: 10px auto 10px;
+  text-align: center;
+  font-family: 'Spline Sans', sans-serif;
+  font-weight: 400;
+  padding: 10px 10px 70px 20px;
+  
+  
+  
+
+}
+.servies-container .boxes{
+  min-width: calc(30% - 0px);
+  background-color:rgb(110, 105, 105);
+  border-radius:4px;
+  height:220px;
+  text-align: center;
+  line-height: 30px;
+  padding: 10px 10px;
+  margin:10px;
+  transition: all .3s ease;
+  
+  
+}
+.servies-container .boxes:hover{
+  background-color:crimson;
+  transform: scale(1.02);
+}
+.servies-container .boxes .icons{
+  color: rgb(252, 30, 74);
+  font-size:60px;
+  font-weight: normal;
+  margin: 9px;
+}
+.servies-container .boxes:hover .icons{
+  color: #fff;
+}
+
+
+/****************My-skills section styling********************/
+.my-skills{
+  text-align:center;
+  margin-bottom:30px;
+  
+  
+
+}
+.my-skills .sec-title{
+  font-family: 'Spline Sans', sans-serif;
+  font-weight: 400;
+}
+.skills-contaier{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 10px auto 10px;
+  font-family: 'Spline Sans', sans-serif;
+}
+.skills-contaier .skill-left{
+  width: 50%;
+  text-align: justify;
+  line-height:25px;
+  font-size:19px;
+
+}
+.skill-head{
+  margin-bottom:15px;
+  color: crimson;
+}
+.skills-contaier .skill-left .skill-text{
+  font-size:19px;
+  margin: 10px 0px;
+}
+.skills-contaier .skill-left .fa-heart{
+  color: crimson;
+}
+
+
+.skills-contaier .skill-left .btn:hover{
+  color:#000;
+  background-color:#fff;
+  border:2px solid crimson;
+  font-weight: 400;
+  text-transform:uppercase;
+
+
+}
+.skills-contaier .skill-right{
+  width: 45%;
+
+}
+.skill-right .skill-nmbr .info{
+  display:flex;
+  justify-content:space-between;
+  line-height: 60px; 
+  
+  
+  
+  
+  
+}
+.skill-right .skill-nmbr .line{
+  width: 100%;
+  height:6px;
+  background-color:rgb(218, 201, 201);
+  position: relative;
+  border-radius:2px;
+  font-weight: 700;
+  
+ 
+ 
+}
+
+.skill-right .skill-nmbr .line::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 85%;
+  background-color:crimson;
+
+}
+.skill-right .skill-nmbr .css::before{
+  width: 80%;
+
+}
+.skill-right .skill-nmbr .js::before{
+  width: 60%;
+
+}
+.skill-right .skill-nmbr .bs::before{
+  width: 80%;
+
+}
+.skill-right .skill-nmbr .git::before{
+  width: 70%;
+
+}
+
+
+
+
+
+
+
+
+
+/****************My-team section styling********************/
+.my-team,
+.my-service{
+  margin: 50px 0px;
+  width: 100%;
+  background-color: #000;
+  font-family: 'Spline Sans', sans-serif;
+  color: #fff;
+
+}
+.title{
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  text-transform:uppercase;
+  font-family: 'Spline Sans', sans-serif;
+  position: relative;
+  font-weight:500;
+}
+.title::before{
+  content: '';
+  position:absolute;
+  width: 200px;
+  height: 2px;
+  background-color: crimson;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  
+
+}
+.title::after{
+  content: 'who with me';
+  position:absolute;
+  bottom: -10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #000;
+  left: 50%;
+  padding:3px;
+  transform: translateX(-50%);
+  
+}
+.my-service .title::after{
+  content: 'What I Provide';
+  position:absolute;
+}
+
+.my-team .profile{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width:80vw;
+  margin: 10px auto 10px;
+  text-align: center;
+  font-family: 'Spline Sans', sans-serif;
+  font-weight: 400;
+  padding: 10px 10px 70px 20px;
+
+}
+.my-team .profile .profile-1{
+  min-width: calc(30% - 20px);
+  margin-top: 20px;
+  background-color:rgb(110, 105, 105);
+  border-radius:4px;
+  text-align: center;
+  line-height: 30px;
+  transition: all 0.3s ease;
+
+
+  
+}
+.my-team .profile .profile-1 img{
+  width:100px;
+  height:100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin:20px;
+  outline: 4px solid crimson;
+
+}
+.my-team .profile .profile-1:hover{
+  background-color:rgb(248, 28, 72);
+  transform: scale(1.02);
+}
+.my-team .profile .profile-1:hover img{
+  outline: 4px solid rgb(245, 240, 241);
+}
+
+
+
+/********** contact section syling ***********/
+.contacts .sec-title{
+  Text-align:center;
+  font-weight: 400;
+  font-family: 'Spline Sans', sans-serif;
+  
+}
+.contact-container{
+  display:flex;
+  width: 90%;
+  margin: 10px auto 10px;
+  justify-content: space-between;
+  font-family: 'Spline Sans', sans-serif;
+}
+.contact-container .cont-left{
+  width: 40%;
+  text-align: justify;
+
+}
+.contact-container .cont-left .get-touch{
+  margin-bottom: 10px;
+}
+.contact-container .cont-left .con-info{
+  font-size:19px;
+}
+.contact-container .cont-left .icons{
+  display: flex;
+  width: 70%;
+  margin:25px 0px;
+  text-align:left;
+  font-size: 18px;
+}
+.contact-container .cont-left .icon-1{
+  margin-right:40px;
+  font-size: 30px;
+}
+.contact-container .cont-right{
+  width:45%;
+
+}
+.contact-container .cont-right input{
+  width: 100%;
+  font-size:18px;
+  padding:5px 5px;
+  margin: 10px 1px;
+  border-radius: 3px;
+  outline:none;
+  caret-color: rgb(98, 238, 129);
+  border: 1px solid rgb(155, 149, 150);
+  
+ 
+}
+
+.messas-up-part{
+  display: flex;
+}
+.contact-container .cont-right .last{
+  width: 100%;
+  font-size:19px;
+  border-radius: 3px;
+  outline:none;
+  caret-color: rgb(147, 189, 89);
+  border: 1px solid rgb(155, 149, 150);
+  padding: 10px;
+  
+}
+.contact-container .cont-right .btn{
+  color:#fff;
+  font-family: 'Spline Sans', sans-serif;
+  padding: 10px 30px;
+  background-color:crimson;
+  border:2px solid crimson;
+  font-weight: 400;
+  border-radius:4px;
+  text-transform:uppercase;
+  margin: 30px 0px;
+  font-size:18px;
+  transition:all 0.3s ease;
+}
+.contact-container .cont-right .btn:hover{
+  background: #fff;
+  color: #000;
+}
+
+.footer{
+  margin: 10px auto 10px;
+  background-color: #000;
+  width: 100%;
+  height:30px;
+  color: crimson;
+  padding: 10px;
+  font-family: "Helvetica Neue", "Helvetica";
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+/************* responsive nav section styling******************/
+
+
+@media screen and (max-width: 1200px){
+  .about-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+  }
+  .about-container .about-text{
+  font-family:'Spline Sans', sans-serif;
+  width: 600px;
+  font-weight: 400;
+  box-sizing: border-box;
+  font-size: 18px;
+
+  }
+
+
+}
+
+@media screen and (max-width: 992px){
+  .max-width .logo{
+    margin-left: 30px;
+  }
+  .home-text .text-1{
+    color: white;
+    font-size: 25px;
+    font-family:'Spline Sans', sans-serif; 
+   
+   
+  }
+  .home-text .text-2{
+    color: white;
+    font-size: 45px;
+    font-family:'Spline Sans', sans-serif; 
+  }
+  .home-text .text-3{
+    color: white;
+    font-size: 29px;
+    font-family:'Spline Sans', sans-serif; 
+    margin-bottom: 20px;
+  
+  }
+  .home-text .btn{
+    padding: 10px 40px;
+    color:#000;
+    font-size:20px;
+
+  }
+  .home-text {
+    line-height: 70px;
+    margin-left: 35px;
+    
+  }
+/*************about text styling*******************/
+
+  .about-container .about-text{
+  font-family:'Spline Sans', sans-serif;
+  width: 400px;
+  font-weight: 400;
+  margin: 10px 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+
+  }
+
+
+}
+/*************home text*******************/
+@media screen and (max-width: 768px){
+  .max-width .links{
+    display: sticky;
+    position: absolute;
+    width: 100%;
+    background-color: #000;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    text-align: center;
+    padding-top:50px;
+    transition: all 0.4s ease;
+    z-index: 99;
+    
+
+  }
+  .max-width .links.active{
+    left: 0;
+    z-index: 55;
+
+
+  }
+  .menu-btn{
+    display:block;
+    z-index: 999;
+  }
+  .max-width .links li{
+    display:block;
+  }
+
+
+
+  .max-width .links li a{
+    display:inline-block;
+    color: #fff;
+    padding: 12px 30px;
+    text-align: center;
+    
+  }
+  .max-width .links li a:hover{
+    color: crimson;
+
+  }
+  
+.max-width .logo{
+  margin-left: 10px;
+}
+
+
+  /*************home text*******************/
+
+  .home-text {
+    line-height: 50px;
+    margin-left: 25px;
+    
+  }
+
+  .home-text .text-1{
+    color: white;
+    font-size: 20px;
+    font-family:'Spline Sans', sans-serif; 
+   
+   
+  }
+  .home-text .text-2{
+    color: white;
+    font-size: 40px;
+    font-family:'Spline Sans', sans-serif; 
+  }
+  .home-text .text-3{
+    color: white;
+    font-size: 22px;
+    font-family:'Spline Sans', sans-serif; 
+    margin-bottom: 20px;
+  
+  }
+  .home-text .btn{
+    padding: 10px 30px 10px 30px;
+    color:#000;
+    font-size:16px;
+
+  }
+
+
+ /*************about text*******************/
+
+  .about-container{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+
+
+  }
+  .about-container .about-text{
+  font-family:'Spline Sans', sans-serif;
+  width: 100%;
+  font-weight: 400;
+  box-sizing: border-box;
+  font-size: 18px;
+  margin-top:20px;
+
+  }
+  .about-text .btn{
+    padding: 10px 10px;
+    margin: 20px 0px;
+    font-size:16px;
+    
+  
+  }
+  .my-team .profile,
+  .servies-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+ 
+  .my-team .profile .profile-1{
+    width: calc(50% - 10px);
+    line-height: 25px;
+  }
+  .servies-container .boxes{
+    width: calc(50% - 20px);
+  }
+  .contact-container{
+    flex-direction: column;
+  }
+  .contact-container .cont-right,
+  .contact-container .cont-left
+  {
+    width: 100%;
+  }
+
+
+  
+}
+
+@media screen and (max-width: 568px){
+ 
+ 
+  .my-team .profile .profile-1,
+  .servies-container .boxes{
+    width: 100%;
+    line-height: 25px;
+  }
+  .skills-contaier{
+    flex-direction:column;
+  }
+  .skills-contaier .skill-left{
+    width: 100%;
+  }
+  .skills-contaier .skill-right{
+    width: 100%;
+    font-size: 22px;
+  }
+  .contact-container .cont-right .messas-up-part{
+    flex-direction: column;
+    width: 100%;
+  }
+  .servies-container .boxes{
+    height: 100%;
+  }
+  
+}
+
+
+
+
