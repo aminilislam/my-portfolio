@@ -124,6 +124,7 @@
  border-radius:5px;
  border:none;
  text-transform:uppercase;
+ text-decoration: none;
  
  
 }
@@ -232,6 +233,7 @@
   box-sizing: border-box;
   font-size: 20px;
   font-size: 25px;
+  opacity: 0;
  
 }
 .about-container span{
@@ -269,8 +271,11 @@
   text-transform:uppercase;
 
 }
-/****************My-Service section styling********************/
 
+/****************My-Service section styling********************/
+.my-service{
+  padding-top: 50px;
+}
 .servies-container{
   display:flex;
   justify-content: space-between;
@@ -282,6 +287,7 @@
   font-family: 'Spline Sans', sans-serif;
   font-weight: 400;
   padding: 10px 10px 70px 20px;
+  padding-top: 10px;
   
   
   
@@ -319,6 +325,8 @@
 .my-skills{
   text-align:center;
   margin-bottom:30px;
+  padding-top:50px;
+
   
   
 
@@ -432,6 +440,7 @@
   background-color: #000;
   font-family: 'Spline Sans', sans-serif;
   color: #fff;
+  padding-top: 50px;
 
 }
 .title{
@@ -516,7 +525,10 @@
 
 
 
-/********** contact section syling ***********/
+/********** contacts section syling ***********/
+.contacts{
+  padding-top: 50px;
+}
 .contacts .sec-title{
   Text-align:center;
   font-weight: 400;
@@ -611,6 +623,18 @@
   text-align: center;
 }
 
+.image{
+  opacity: 0;
+}
+
+.image .animate__animated .animate__rollIn,
+.about-container .about-text .animate__animated .animate__fadeInRight{
+  opacity: 1;
+
+}
+
+
+
 
 
 
@@ -680,6 +704,7 @@
     padding: 10px 40px;
     color:#000;
     font-size:20px;
+    text-decoration: none;
 
   }
   .home-text {
